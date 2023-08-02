@@ -37,7 +37,7 @@ export function insertEmployee() {
             var employeeToInsert = requestToServer.body
 
             var employeeValues = [
-                employeeToInsert.fullName,
+                employeeToInsert.full_name,
                 employeeToInsert.information,
                 employeeToInsert.department,
                 employeeToInsert.job
@@ -58,7 +58,7 @@ export function updateEmployee() {
             var employeeToUpdate = requestToServer.body
 
             var employeeValues = [
-                employeeToUpdate.fullName,
+                employeeToUpdate.full_name,
                 employeeToUpdate.information,
                 employeeToUpdate.department,
                 employeeToUpdate.job,
