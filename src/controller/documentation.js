@@ -12,6 +12,7 @@ export function getDocumentation() {
     return async (requestToServer, responseToClient) => {
         responseToClient.send({
             baseUrl: "http://localhost:3001/api/",
+
             newsArticles: "baseUrl/news-articles",
             getNewsArticles: "GET baseUrl/news-articles",
             getNewsArticle: "GET baseUrl/news-articles/:news_id",
@@ -37,6 +38,8 @@ export function getDocumentation() {
                 department: "Radio Shows",
                 job: "Radio Moderator",
             },
+
+            documentation: "baseUrl/documentation",
         })
     }
 }
