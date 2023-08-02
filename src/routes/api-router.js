@@ -18,7 +18,12 @@ import {
     deleteEmployee
 } from "../controller/employees.js";
 
+import {getDocumentation, getUserNoticeAboutTheDocumentation} from "../controller/documentation.js";
+
 const apiRouter = express.Router();
+
+const rootPath = "/"
+const documentationPath = "/documentation";
 
 const newsArticlesPath = "/news-articles";
 const newsArticlesPathWithParameterNewsId = "/news-articles/:news_id";
