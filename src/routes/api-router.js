@@ -42,6 +42,9 @@ apiRouter.use((req, res, next) => {
     next(); // Fahren Sie mit der nächsten Middleware oder Route fort
 });
 
+apiRouter.get(rootPath, getUserNoticeAboutTheDocumentation())
+apiRouter.get(documentationPath, getDocumentation())
+
 apiRouter.get(newsArticlesPath, getNewsArticles())
 apiRouter.get(newsArticlesPathWithParameterNewsId, getNewsArticle())
 
